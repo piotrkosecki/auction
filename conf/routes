@@ -3,16 +3,11 @@
 # ~~~~
 
 
-GET     /auctions                   controllers.AuctionController.listAuctions
+GET     /auctions                   com.pk.auctions.controllers.AuctionController.listAuctions
 
-GET     /auctions/:auctionId        controllers.AuctionController.getAuction(auctionId: java.util.UUID)
+GET     /auctions/:auctionId        com.pk.auctions.controllers.AuctionController.getAuction(auctionId: java.util.UUID)
 
 # docelowo nie powinno tu być userId, userId powinien być wyciągnięty z tokena JWT
-POST    /auctions/:userId           controllers.AuctionController.createAuction(userId: java.util.UUID)
+POST    /auctions/:userId           com.pk.auctions.controllers.AuctionController.createAuction(userId: java.util.UUID)
 
-POST    /auctions/:auctionId/bid    controllers.AuctionController.bid(auctionId: java.util.UUID)
-
-
-# Map static resources from the /public folder to the /assets URL path
-GET     /assets/*file               controllers.Assets.at(path="/public", file)
-
+POST    /auctions/:auctionId/bid    com.pk.auctions.controllers.AuctionController.bid(auctionId: java.util.UUID)

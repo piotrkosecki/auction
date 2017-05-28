@@ -4,7 +4,6 @@ import java.util.UUID
 
 import akka.Done
 import com.pk.auctions.models.{Auction, Bid}
-import models.Bid
 import slick.jdbc.JdbcBackend.Database
 import slick.jdbc.JdbcProfile
 import slick.lifted.ProvenShape

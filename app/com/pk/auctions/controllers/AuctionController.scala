@@ -6,7 +6,6 @@ import com.pk.auctions.actors.AuctionProtocol._
 import com.pk.auctions.actors.CoordinatorActor.{BidAuction, CreateAuctionProtocol}
 import com.google.inject.Inject
 import com.pk.auctions.models.{BidAuctionRequest, CreateAuctionRequest}
-import models.BidAuctionRequest
 import play.api.libs.json.{Json, Reads}
 import play.api.mvc._
 import com.pk.auctions.services.{AuctionReadService, AuctionWriteService}

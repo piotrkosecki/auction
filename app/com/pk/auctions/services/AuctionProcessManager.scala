@@ -10,7 +10,6 @@ import akka.stream.scaladsl.Sink
 import com.google.inject.Inject
 import com.google.inject.name.Named
 import com.pk.auctions.models.{Auction, Bid}
-import models.Bid
 import com.pk.auctions.repos.AuctionRepo
 import com.pk.auctions.services.AuctionProcessManager.StartJournalStreaming
 
