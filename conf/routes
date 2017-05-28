@@ -1,0 +1,18 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
+
+GET     /auctions                   controllers.AuctionController.listAuctions
+
+GET     /auctions/:auctionId        controllers.AuctionController.getAuction(auctionId: java.util.UUID)
+
+# docelowo nie powinno tu być userId, userId powinien być wyciągnięty z tokena JWT
+POST    /auctions/:userId           controllers.AuctionController.createAuction(userId: java.util.UUID)
+
+POST    /auctions/:auctionId/bid    controllers.AuctionController.bid(auctionId: java.util.UUID)
+
+
+# Map static resources from the /public folder to the /assets URL path
+GET     /assets/*file               controllers.Assets.at(path="/public", file)
+
